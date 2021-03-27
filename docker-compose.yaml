@@ -3,7 +3,7 @@ services:
   db:
     container_name: mysql
     build: ./db
-    image: PJenner/trio-task-mysql
+    image: pjenner/trio-task-mysql
     environment: 
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: flask-db
@@ -14,7 +14,7 @@ services:
   flask:
     container_name: flask-app
     build: ./flask-app
-    image: PJenner/trio-task-flask-app
+    image: pjenner/trio-task-flask-app
   nginx:
     image: nginx:latest
     ports:
