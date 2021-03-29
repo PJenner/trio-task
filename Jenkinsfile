@@ -9,6 +9,7 @@ pipeline {
 
         stage("Install Dependencies") {
             steps{
+                sh "echo $MYSQL_ROOT_PASSWORD"
                 sh "bash install-dependencies.sh"
             }
         }
