@@ -5,7 +5,7 @@ services:
     build: ./db
     image: pjenner/trio-task-mysql
     environment: 
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_ROOT_PASSWORD: "password"
       MYSQL_DATABASE: flask-db
     volumes:
     - type: volume
